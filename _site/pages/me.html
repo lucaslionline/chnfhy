@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+	<title>个人中心</title>
+	
+	<!--
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-3.0.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/dashboard.css">
+	-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/weui.css">
+
+	
+	<script src="/assets/js/echarts.js"></script>
+	<script src="/assets/js/dataTool.js"></script>
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+
+
+	<div style="height: 120px; background: url(/assets/img/bg4.jpg) center center; background-size: cover;">
+	<table style="height:100%; color: white;">
+		<tr>
+			<td style="padding-left: 15px;"><img width="50px" src="/assets/img/profile-user.png"></td>
+			<td style="padding-left: 5px;">微信名</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+<div class="weui-cells">
+	<a class="weui-cell weui-cell_access" href="javascript:;">
+		<div class="weui-cell__bd">
+			<p>我的订单</p>
+		</div>
+		<div class="weui-cell__ft">查看全部订单</div>
+	</a>
+</div>
+
+
+
+<div class="weui-tab">
+	<div class="weui-navbar">
+		<div class="weui-navbar__item">
+			<span style="display: inline-block; position: relative;">
+				<i data-feather="credit-card"></i><br>
+				<span class="weui-badge" style="position: absolute;top: -2px; right: -4px;">2</span>
+				待支付
+			</span>
+		</div>
+		<div class="weui-navbar__item">
+			<i data-feather="package"></i><br>
+			待发货
+		</div>
+		<div class="weui-navbar__item">
+			<i data-feather="truck"></i><br>
+			待收货
+		</div>
+		<div class="weui-navbar__item">
+			<i data-feather="circle"></i><br>
+			退换货
+		</div>
+	</div>
+	<div class="weui-tab__panel">
+
+	</div>
+</div>
+
+
+
+<div class="weui-cells">
+	<a class="weui-cell weui-cell_access" href="javascript:;">
+		<div class="weui-cell__hd"><i data-feather="dollar-sign"></i></div>
+		<div class="weui-cell__bd">
+			<p>我的余额</p>
+		</div>
+		<div class="weui-cell__ft">0</div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="javascript:;">
+		<div class="weui-cell__hd"><i data-feather="tag"></i></div>
+		<div class="weui-cell__bd">
+			<p>我的积分</p>
+		</div>
+		<div class="weui-cell__ft">0</div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="javascript:;">
+		<div class="weui-cell__hd"><i data-feather="bookmark"></i></div>
+		<div class="weui-cell__bd">
+			<p>我的礼品券</p>
+		</div>
+		<div class="weui-cell__ft">0</div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="javascript:;">
+		<div class="weui-cell__hd"><i data-feather="user"></i></div>
+		<div class="weui-cell__bd">
+			<p>个人信息</p>
+		</div>
+		<div class="weui-cell__ft">0</div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="javascript:;">
+		<div class="weui-cell__hd"><i data-feather="map-pin"></i></div>
+		<div class="weui-cell__bd">
+			<p>收货地址</p>
+		</div>
+		<div class="weui-cell__ft">0</div>
+	</a>
+</div>
+
+
+	<footer class="weui-footer_fixed-bottom">
+	<div class="weui-tabbar">
+		<a href="/index.html" class="weui-tabbar__item ">
+			<i class="weui-tabbar__icon" data-feather="home"></i>
+			<p class="weui-tabbar__label">首页</p>
+		</a>
+		<a href="/pages/items.html" class="weui-tabbar__item ">
+			<i class="weui-tabbar__icon" data-feather="shopping-bag"></i>
+			<p class="weui-tabbar__label">商品</p>
+		</a>
+		<a href="/pages/cart.html" class="weui-tabbar__item ">
+			<span style="display: inline-block; position: relative;">
+				<i class="weui-tabbar__icon" data-feather="shopping-cart"></i>
+				<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">1</span>
+			</span>
+			<p class="weui-tabbar__label">购物车</p>
+		</a>
+		<a href="/pages/me.html" class="weui-tabbar__item weui-bar__item_on">
+			<span style="display: inline-block;position: relative;">
+				<i class="weui-tabbar__icon" data-feather="user"></i>
+				<span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+			</span>
+			<p class="weui-tabbar__label">我的</p>
+		</a>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="/assets/js/jquery-1.11.3.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/feather.min.js"></script>
+<script>
+feather.replace()
+</script>
+</div>
+</body>
+</html>

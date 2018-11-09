@@ -1,0 +1,40 @@
+<footer class="weui-footer_fixed-bottom">
+	<div class="weui-tabbar">
+		<a href="{{ site.baseurl }}/index.html" class="weui-tabbar__item {% if page.url contains 'index' %}weui-bar__item_on{% endif %}">
+			<i class="weui-tabbar__icon" data-feather="home"></i>
+			<p class="weui-tabbar__label">首页</p>
+		</a>
+		<a href="{{ site.baseurl }}/pages/items.html" class="weui-tabbar__item {% if page.url contains 'items' %}weui-bar__item_on{% endif %}">
+			<i class="weui-tabbar__icon" data-feather="shopping-bag"></i>
+			<p class="weui-tabbar__label">商品</p>
+		</a>
+		<a href="{{ site.baseurl }}/pages/cart.html" class="weui-tabbar__item {% if page.url contains 'cart' %}weui-bar__item_on{% endif %}">
+			<span style="display: inline-block; position: relative;">
+				<i class="weui-tabbar__icon" data-feather="shopping-cart"></i>
+				<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">1</span>
+			</span>
+			<p class="weui-tabbar__label">购物车</p>
+		</a>
+		<a href="{{ site.baseurl }}/pages/me.html" class="weui-tabbar__item {% if page.url contains 'me' %}weui-bar__item_on{% endif %}">
+			<span style="display: inline-block;position: relative;">
+				<i class="weui-tabbar__icon" data-feather="user"></i>
+				<span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+			</span>
+			<p class="weui-tabbar__label">我的</p>
+		</a>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery-1.11.3.js"></script>
+<script src="{{ site.baseurl }}/assets/js/popper.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/feather.min.js"></script>
+<script>
+feather.replace()
+</script>
