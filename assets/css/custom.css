@@ -12,6 +12,22 @@
 .container {
 	margin-bottom: 50px;
 }
+
+.index-cover {
+	position: relative;
+}
+.index-cover .index-cover-title {
+	position: absolute;
+	left: 15px;
+	top: 65px;
+}
+.index-cover img {
+	width: 100%;
+}
+
+
+
+
  .weui-cell__hd .feather {
  	height: 16px;
  }
