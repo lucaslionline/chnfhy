@@ -9,6 +9,27 @@
 
 
 
+
+
+
+
+
+
+
+
+.x-small {
+	font-size: x-small;
+}
+.gray {
+	color: gray;
+}
+.red {
+	color: red;
+}
+.bg-red {
+	background-color: red;
+}
+
 .container {
 	margin-bottom: 50px;
 }
@@ -153,7 +174,16 @@
 }
 
 
+.checkout-tbl {
+	width: 100%;
+}
+.checkout-btn {
+	background-color: red;
+	color: white;
+}
+.checkout-price {
 
+}
 
 
 
