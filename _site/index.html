@@ -100,7 +100,7 @@ var mySwiper = new Swiper ('#cover', {
 
 
 <div class="item-category">
-	<center><text class="iconfont icon-hot" style="color: red;"></text> <strong>热 卖 商 品</strong></center>
+	<center><text class="iconfont icon-hot red"></text> <strong>热 卖 商 品</strong></center>
 </div>
 
 
@@ -159,15 +159,20 @@ var mySwiper = new Swiper ('#cover', {
 			</div>
 		</div>
 	</div>
-	
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
 	 <!-- 如果需要滚动条 -->
-    <div class="swiper-scrollbar"></div>
+    <!--div class="swiper-scrollbar"></div-->
 </div>
 
 
 <script type="text/javascript">
 var swiper = new Swiper('#hot', {
 slidesPerView:2,  //默认页面显示多少个
+navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+},
 // 如果需要滚动条
     scrollbar: {
       el: '.swiper-scrollbar',
