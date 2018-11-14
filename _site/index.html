@@ -16,8 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="/fenghuangyuan/assets/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="/fenghuangyuan/assets/css/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="/fenghuangyuan/assets/css/weui.css">
+	<link rel="stylesheet" type="text/css" href="/fenghuangyuan/assets/css/swiper.min.css">
 
-	
+	<script src="/fenghuangyuan/assets/js/swiper.min.js"></script>
 	<script src="/fenghuangyuan/assets/js/echarts.js"></script>
 	<script src="/fenghuangyuan/assets/js/dataTool.js"></script>
 </head>
@@ -28,14 +29,31 @@
 	<div class="container">
 
 
-	<div class="index-cover">
-	<img src="/fenghuangyuan/assets/img/cover.jpg">
-	<div class="index-cover-title">
-		<h2>凤凰源</h2>
-		<h3>铁皮石斛产业园</h3>
-		<h4>在线官方商城</h4>
+	<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<img src="/fenghuangyuan/assets/img/cover.jpg">
+		</div>
+		<div class="swiper-slide">slider2</div>
+		<div class="swiper-slide">slider3</div>
+		<div class="swiper-slide">slider4</div>
 	</div>
+	<!-- 如果需要分页器 -->
+	<div class="swiper-pagination"></div>
 </div>
+
+<script type="text/javascript">
+var mySwiper = new Swiper('.swiper-container', {
+     //切换效果
+	direction: 'horizontal',
+    //effect: 'coverflow',//'flip','coverflow','cube','fade',  默认横向滑动
+    loop: true,  //是否循环
+    autoplay: 3000,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+});
+</script>
 
 
 
@@ -86,7 +104,7 @@
 
 
 <div class="item-category">
-	<h4><center><text class="iconfont icon-hot" style="color: red"></text> 热 卖 商 品</center></h4>
+	<h4><center><text class="iconfont icon-hot" style="color: red;"></text> 热 卖 商 品</center></h4>
 </div>
 
 
@@ -100,7 +118,7 @@
 			<p class="item-price">
 				<span class="new-price">¥458.00</span>
 				<span class="old-price">¥500.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				<a href=""><span class="item-cart"><i data-feather="shopping-cart"></i></span></a>
 			</p>
 		</div>
 	</div>
@@ -114,7 +132,7 @@
 			<p class="item-price">
 				<span class="new-price">¥898.00</span>
 				<span class="old-price">¥1000.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				<a href=""><span class="item-cart"><i data-feather="shopping-cart"></i></span></a>
 			</p>
 		</div>
 	</div>
@@ -128,7 +146,7 @@
 			<p class="item-price">
 				<span class="new-price">¥398.00</span>
 				<span class="old-price">¥500.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				<a href=""><span class="item-cart"><i data-feather="shopping-cart"></i></span></a>
 			</p>
 		</div>
 	</div>
@@ -142,7 +160,7 @@
 			<p class="item-price">
 				<span class="new-price">¥198.00</span>
 				<span class="old-price">¥300.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				<a href=""><span class="item-cart"><i data-feather="shopping-cart"></i></span></a>
 			</p>
 		</div>
 	</div>
@@ -163,9 +181,9 @@
 			<text class="iconfont icon-goods"></text>
 			<p class="weui-tabbar__label">商品</p>
 		</a>
-		<a href="/fenghuangyuan/pages/search.html" class="weui-tabbar__item ">
-			<text class="iconfont icon-search"></text>
-			<p class="weui-tabbar__label">搜索</p>
+		<a href="#" class="weui-tabbar__item ">
+			<text class="iconfont icon-scan"></text>
+			<p class="weui-tabbar__label">扫码</p>
 		</a>
 		<a href="/fenghuangyuan/pages/cart.html" class="weui-tabbar__item ">
 			<span style="display: inline-block; position: relative;">
