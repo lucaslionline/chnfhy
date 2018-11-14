@@ -41,15 +41,15 @@
 </div>
 
 <script type="text/javascript">
-var mySwiper = new Swiper('.swiper-container', {
-	direction: 'horizontal', //默认横向滑动
-    //effect: 'coverflow',//切换效果 'flip','coverflow','cube','fade'
-    loop: true,  //是否循环
-    autoplay: 3000,
-    // 如果需要分页器
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-});
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });    
 </script>
 
 
