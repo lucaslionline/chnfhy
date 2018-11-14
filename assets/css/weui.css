@@ -1429,8 +1429,8 @@
  	background-color:#ECECEC;
  }
  .weui-media-box__title{
- 	font-weight:400;
- 	font-size:17px;
+ 	font-weight:normal;
+ 	font-size:larger;
  	width:auto;
  	overflow:hidden;
  	text-overflow:ellipsis;

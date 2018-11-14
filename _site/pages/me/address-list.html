@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
-	<title>个人中心</title>
+	<title>收货地址</title>
 	
 	<!--
 	<link rel="stylesheet" type="text/css" href="/fenghuangyuan/assets/css/bootstrap-3.0.css">
@@ -29,94 +29,45 @@
 	<div class="container">
 
 
-	<div style="height: 120px; background: url(/fenghuangyuan/assets/img/bg1.jpg) center center; background-size: cover;">
-	<table style="height:100%; color: white;">
-		<tr>
-			<td style="padding-left: 15px;"><img width="50px" src="/fenghuangyuan/assets/img/profile-user.png"></td>
-			<td style="padding-left: 5px;">微信名</td>
-		</tr>
-	</table>
-</div>
-
-
-
-
-<div class="weui-cells">
-	<a class="weui-cell weui-cell_access" href="javascript:;">
-		<div class="weui-cell__bd">
-			<p><text class="iconfont icon-text"></text>&nbsp;我的订单</p>
+	<div class="weui-panel">
+	<div class="weui-panel__bd">
+		<div class="weui-media-box weui-media-box_text">
+			<p class="weui-media-box__title">
+				<span class="address-name">张三</span>
+				<span class="address-tel">137****1234</span>
+			</p>
+			<p class="weui-media-box__desc">北京市xx区xx街xx楼xx室</p>
+			<ul class="weui-media-box__info">
+				<a href="#">
+					<li class="weui-media-box__info__meta"><text class="iconfont icon-edit"></text> 编辑</li>
+				</a>
+				<a href="#">
+					<li class="weui-media-box__info__meta"><text class="iconfont icon-delete"></text> 删除</li>
+				</a>
+				<li class="weui-media-box__info__meta weui-media-box__info__meta_extra">默认地址</li>
+			</ul>
 		</div>
-		<div class="weui-cell__ft">查看全部订单</div>
-	</a>
-</div>
 
-
-
-<div class="weui-tab">
-	<div class="weui-navbar">
-		<div class="weui-navbar__item">
-			<span style="display: inline-block; position: relative;">
-				<text class="iconfont icon-pay" style="font-size: 1.5rem;"></text><br>
-				<span class="weui-badge" style="position: absolute;top: -2px; right: -4px;">2</span>
-				待支付
-			</span>
-		</div>
-		<div class="weui-navbar__item">
-			<text class="iconfont icon-present" style="font-size: 1.5rem;"></text><br>
-			待发货
-		</div>
-		<div class="weui-navbar__item">
-			<text class="iconfont icon-deliver" style="font-size: 1.5rem;"></text><br>
-			待收货
-		</div>
-		<div class="weui-navbar__item">
-			<text class="iconfont icon-round_transfer" style="font-size: 1.5rem;"></text><br>
-			退换货
+		<div class="weui-media-box weui-media-box_text">
+			<p class="weui-media-box__title">
+				<span class="address-name">李四</span>
+				<span class="address-tel">138****1234</span>
+			</p>
+			<p class="weui-media-box__desc">上海市xx区xx街xx楼xx室</p>
+			<ul class="weui-media-box__info">
+				<a href="#">
+					<li class="weui-media-box__info__meta"><text class="iconfont icon-edit"></text> 编辑</li>
+				</a>
+				<a href="#">
+					<li class="weui-media-box__info__meta"><text class="iconfont icon-delete"></text> 删除</li>
+				</a>
+			</ul>
 		</div>
 	</div>
-	<div class="weui-tab__panel">
-
-	</div>
 </div>
 
-
-
-<div class="weui-cells">
-	<a class="weui-cell weui-cell_access" href="javascript:;">
-		<div class="weui-cell__hd"><text class="iconfont icon-moneybag"></text>&nbsp;</div>
-		<div class="weui-cell__bd">
-			<p>我的余额</p>
-		</div>
-		<div class="weui-cell__ft">0</div>
-	</a>
-	<a class="weui-cell weui-cell_access" href="javascript:;">
-		<div class="weui-cell__hd"><text class="iconfont icon-coin"></text>&nbsp;</div>
-		<div class="weui-cell__bd">
-			<p>我的积分</p>
-		</div>
-		<div class="weui-cell__ft">0</div>
-	</a>
-	<a class="weui-cell weui-cell_access" href="javascript:;">
-		<div class="weui-cell__hd"><text class="iconfont icon-redpacket"></text>&nbsp;</div>
-		<div class="weui-cell__bd">
-			<p>我的礼券</p>
-		</div>
-		<div class="weui-cell__ft">0</div>
-	</a>
-	<a class="weui-cell weui-cell_access" href="javascript:;">
-		<div class="weui-cell__hd"><text class="iconfont icon-peoplelist"></text>&nbsp;</div>
-		<div class="weui-cell__bd">
-			<p>个人信息</p>
-		</div>
-		<div class="weui-cell__ft">0</div>
-	</a>
-	<a class="weui-cell weui-cell_access" href="/fenghuangyuan/pages/me/address-null.html">
-		<div class="weui-cell__hd"><text class="iconfont icon-location"></text>&nbsp;</div>
-		<div class="weui-cell__bd">
-			<p>收货地址</p>
-		</div>
-		<div class="weui-cell__ft">0</div>
-	</a>
+<div class="weui-btn-area">
+	<a href="/fenghuangyuan/pages/me/address-new.html" class="weui-btn weui-btn_primary">新建地址</a>
 </div>
 
 
