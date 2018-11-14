@@ -4,7 +4,7 @@ title: "凤凰源官方商城"
 ---
 
 
-<div class="swiper-container">
+<div class="swiper-container" id="cover">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide"><img src="{{ site.baseurl }}/assets/img/slide1.jpg"></div>
 		<div class="swiper-slide"><img src="{{ site.baseurl }}/assets/img/slide2.jpg"></div>
@@ -16,15 +16,14 @@ title: "凤凰源官方商城"
 </div>
 
 <script type="text/javascript">
-var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'horizontal',
-    loop: true, // 循环模式选项
-    
-    // 如果需要分页器
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });    
+var mySwiper = new Swiper ('#cover', {
+	direction: 'horizontal',
+	loop: true, // 循环模式选项
+	// 如果需要分页器
+	pagination: {
+		el: '.swiper-pagination',
+	},
+});    
 </script>
 
 
@@ -76,67 +75,82 @@ var mySwiper = new Swiper ('.swiper-container', {
 
 
 <div class="item-category">
-	<h4><center><text class="iconfont icon-hot" style="color: red;"></text> 热 卖 商 品</center></h4>
+	<center><text class="iconfont icon-hot" style="color: red;"></text> <strong>热 卖 商 品</strong></center>
 </div>
 
 
-<div class="row items">
-	<div class="col-6">
-		<div class="item-list">
-			<a href="#">
-				<img src="{{ site.baseurl }}/assets/img/item1.jpg" alt="">
-				<div class="item-title">铁皮枫斗（50克）</div>
-			</a>
-			<p class="item-price">
-				<span class="new-price">¥458.00</span>
-				<span class="old-price">¥500.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
-			</p>
+<div class="swiper-container" id="hot">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="item-list">
+				<a href="#">
+					<img src="{{ site.baseurl }}/assets/img/item1.jpg" alt="">
+					<div class="item-title">铁皮枫斗（50克）</div>
+				</a>
+				<p class="item-price">
+					<span class="new-price">¥458.00</span>
+					<span class="old-price">¥500.00</span>
+					<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				</p>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="item-list">
+				<a href="#">
+					<img src="{{ site.baseurl }}/assets/img/item2.jpg" alt="">
+					<div class="item-title">铁皮枫斗（100克）</div>
+				</a>
+				<p class="item-price">
+					<span class="new-price">¥898.00</span>
+					<span class="old-price">¥1000.00</span>
+					<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				</p>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="item-list">
+				<a href="#">
+					<img src="{{ site.baseurl }}/assets/img/item3.jpg" alt="">
+					<div class="item-title">铁皮石斛软金粉（金装）</div>
+				</a>
+				<p class="item-price">
+					<span class="new-price">¥398.00</span>
+					<span class="old-price">¥500.00</span>
+					<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				</p>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="item-list">
+				<a href="#">
+					<img src="{{ site.baseurl }}/assets/img/item4.jpg" alt="">
+					<div class="item-title">铁皮石斛软金粉（银装）</div>
+				</a>
+				<p class="item-price">
+					<span class="new-price">¥198.00</span>
+					<span class="old-price">¥300.00</span>
+					<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+				</p>
+			</div>
 		</div>
 	</div>
-
-	<div class="col-6">
-		<div class="item-list">
-			<a href="#">
-				<img src="{{ site.baseurl }}/assets/img/item2.jpg" alt="">
-				<div class="item-title">铁皮枫斗（100克）</div>
-			</a>
-			<p class="item-price">
-				<span class="new-price">¥898.00</span>
-				<span class="old-price">¥1000.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
-			</p>
-		</div>
-	</div>
-
-	<div class="col-6">
-		<div class="item-list">
-			<a href="#">
-				<img src="{{ site.baseurl }}/assets/img/item3.jpg" alt="">
-				<div class="item-title">铁皮石斛软金粉（金装）</div>
-			</a>
-			<p class="item-price">
-				<span class="new-price">¥398.00</span>
-				<span class="old-price">¥500.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
-			</p>
-		</div>
-	</div>
-
-	<div class="col-6">
-		<div class="item-list">
-			<a href="#">
-				<img src="{{ site.baseurl }}/assets/img/item4.jpg" alt="">
-				<div class="item-title">铁皮石斛软金粉（银装）</div>
-			</a>
-			<p class="item-price">
-				<span class="new-price">¥198.00</span>
-				<span class="old-price">¥300.00</span>
-				<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
-			</p>
-		</div>
-	</div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
 </div>
+
+
+<script type="text/javascript">
+var swiper = new Swiper('#hot', {
+slidesPerView:2,  //默认页面显示多少个
+navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+},
+});
+</script>
+
+
+
 <div class="item-category">
 	<center><a href="{{ site.baseurl }}/pages/items.html">查 看 全 部</a></center>
 </div>
