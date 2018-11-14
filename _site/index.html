@@ -159,8 +159,9 @@ var mySwiper = new Swiper ('#cover', {
 			</div>
 		</div>
 	</div>
-	<div class="swiper-button-prev"></div>
-	<div class="swiper-button-next"></div>
+	
+	 <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
 </div>
 
 
@@ -171,6 +172,10 @@ navigation: {
 	nextEl: '.swiper-button-next',
 	prevEl: '.swiper-button-prev',
 },
+// 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
 });
 </script>
 
