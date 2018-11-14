@@ -1450,9 +1450,9 @@
  	-webkit-line-clamp:2;
  }
  .weui-media-box__info{
- 	margin-top:15px;
+ 	margin-top:1em;
  	padding-bottom:5px;
- 	font-size:13px;
+ 	font-size:12px;
  	color:#CECECE;
  	line-height:1em;
  	list-style:none;
