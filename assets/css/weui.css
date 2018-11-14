@@ -1185,7 +1185,7 @@
  	display:-webkit-flex;
  	display:flex;
  	position:absolute;
- 	z-index:500;
+ 	z-index:100;
  	bottom:0;
  	width:100%;
  	background-color:#F7F7FA;
@@ -1609,6 +1609,7 @@
  	bottom:0;
  	left:0;
  	right:0;
+ 	z-index: 100;
  }
  .weui-footer__links{
  	font-size:0;
