@@ -15,10 +15,12 @@ section {
 	display: block;
 }
 
-.w {
-	position: relative;
+.fix-top {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
 }
-
 
 
 
@@ -129,6 +131,13 @@ section {
  	height: 40px;
  	line-height: 40px;
  	background-color: white;
+ 	border-bottom: 1px solid #eee;
+ }
+
+ .section-title {
+ 	height: 40px;
+ 	line-height: 40px;
+ 	background-color: white;
  }
 
 
@@ -151,22 +160,27 @@ section {
  }
 
  .row .col-6:nth-child(odd) .item-list {
- 	margin-right: .2em;
+ 	margin-right: .25em;
  }
  .row .col-6:nth-child(even) .item-list {
- 	margin-left: .2em;
+ 	margin-left: .25em;
  }
+
+.items {
+	margin-top: 87px;
+}
 
  .item-list {
  	background-color: white;
- 	margin-top: .2em;
- 	margin-bottom: .2em;
+ 	margin-top: .25em;
+ 	margin-bottom: .25em;
  }
  .item-list img {
  	width: 100%;
  }
  .item-title {
  	padding: 0 0.5em;
+ 	height: 2.5rem;
  }
  .item-price {
  	padding: 0 0.5em 0.5em 0.5em;
@@ -187,7 +201,7 @@ section {
  }
 
  .item-list-hot {
- 	margin: .2em;
+ 	margin: 0.25em;
  }
 
 
