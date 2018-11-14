@@ -6,7 +6,9 @@
  a {
  	color: inherit;
  }
-
+section {
+	background-color: white;
+}
 
 .swiper-slide img {
 	width: 100%;
@@ -56,6 +58,9 @@
 
  .market-feature {
  	padding: 1em 0;
+ 	background-color: white;
+ 	margin-bottom: 1em;
+ 	border-bottom: 1px solid #eee;
  }
 
 
