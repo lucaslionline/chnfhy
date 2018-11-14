@@ -226,10 +226,14 @@ section {
 	margin-top: 20%;
 }
 
-.new-address {
-	margin-top: 20%;
-	width: 90%;
-}
+ .weui-select-2 {
+ 	-webkit-appearance:none;
+ 	border:0;
+ 	outline:0;
+ 	background-color:transparent;
+ 	width:100%;
+ 	font-size:inherit;
+ }
 
 
 
