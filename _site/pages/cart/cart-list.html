@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
-	<title>新建</title>
+	<title>购物车</title>
 	
 	<!--
 	<link rel="stylesheet" type="text/css" href="/fenghuangyuan/assets/css/bootstrap-3.0.css">
@@ -29,87 +29,50 @@
 	<div class="container">
 
 
-	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-	<h2>新建</h2>
-</div>
+	<form>
+	<div class="weui-cells weui-cells_checkbox">
+		<label class="weui-cell weui-check__label" for="s11">
+			<div class="weui-cell__hd">
+				<input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked"/>
+				<i class="weui-icon-checked"></i>
+			</div>
+			<div class="weui-cell__bd">
+				<p>
+					凤凰源
+					<span style="float: right;">优惠券</span>
+				</p>
+			</div>
+		</label>
+		<label class="weui-cell weui-check__label" for="s12">
+			<div class="weui-cell__hd">
+				<input type="checkbox" name="checkbox1" class="weui-check" id="s12"/>
+				<i class="weui-icon-checked"></i>
+			</div>
 
-<div class="row">
-	<div class="col-md-8 order-md-1">
-		<h5>新建项目</h5>
-		<form class="needs-validation" novalidate>
-			<div class="row">
-				<div class="col-md-6 mb-3">
-					<label for="firstName">项目名称</label>
-					<input type="text" class="form-control" id="" placeholder="关于xxx的调查" value="" required>
+			<div class="weui-cell__bd">
+				<div class="weui-item-box_hd">
+					<img class="weui-item-box_thumb" src="/fenghuangyuan/assets/img/item1.jpg" alt="">
 				</div>
-				<div class="col-md-6 mb-3">
-					<label for="lastName">客户名称</label>
-					<input type="text" class="form-control" id="" placeholder="xxx公司" value="" required>
+				<div class="weui-item-box_bd">
+					<p class="weui-item-box_title">铁皮枫斗（50克）</p>
+					<p class="weui-item-box_desc"><small>商品描述</small></p>
+					<p class="weui-item-box_price">
+						<span><small>¥</small>458<small>.00</small></span>
+					</p>
 				</div>
 			</div>
-
-
-			<div class="mb-3">
-				<label>项目描述<span class="text-muted">（选填）</span></label>
-				<input type="text" class="form-control" id="" placeholder="">
+			<div class="weui-item-box_quantity">
+				<span class="minus">-</span>
+				<span class="quantity">1</span>
+				<span class="plus">+</span>
 			</div>
-
-			<div class="mb-3">
-				<label>选择数据</label>
-				<input type="file" class="form-control">
-			</div>
-
-			
-			<hr>
-			<button class="btn btn-primary btn-sm" type="submit">创建</button>
-		</form>
+		</label>
 	</div>
 
 
 
 
-
-
-	<div class="col-md-4 order-md-2 mb-4">
-		<ul class="list-group mb-3">
-			<li class="list-group-item d-flex justify-content-between lh-condensed">
-				<div>
-					<span>项目ID</span>
-					<small class="text-muted">关于xxx的调查</small>
-				</div>
-				<span class="text-muted">001</span>
-			</li>
-			<li class="list-group-item d-flex justify-content-between lh-condensed">
-				<div>
-					<span>客户ID</span>
-					<small class="text-muted">xxx公司</small>
-				</div>
-				<span class="text-muted">003</span>
-			</li>
-			<li class="list-group-item d-flex justify-content-between lh-condensed">
-				<span>受访人数</span>
-				<span class="text-muted">196</span>
-			</li>
-			<li class="list-group-item d-flex justify-content-between lh-condensed">
-				<span>题目总数</span>
-				<span class="text-muted">25</span>
-			</li>
-			<li class="list-group-item d-flex justify-content-between">
-				<span>创建日期</span>
-				<span class="text-muted">2018-10-30</span>
-			</li>
-		</ul>
-
-
-		<div class="progress">
-			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
-		</div>
-	</div>
-</div>
-
-
-<hr>
-<button class="btn btn-primary btn-sm btn-block" type="submit" onclick="javascript:window.location.href='/fenghuangyuan/pages/stats.html'"><span data-feather="arrow-down-circle"></span> 数据统计</button>
+</form>
 
 
 	<footer class="weui-footer_fixed-bottom">
@@ -126,7 +89,7 @@
 			<text class="iconfont icon-scan"></text>
 			<p class="weui-tabbar__label">扫码</p>
 		</a>
-		<a href="/fenghuangyuan/pages/cart/cart-null.html" class="weui-tabbar__item ">
+		<a href="/fenghuangyuan/pages/cart/cart-null.html" class="weui-tabbar__item weui-bar__item_on">
 			<span style="display: inline-block; position: relative;">
 				<text class="iconfont icon-cart"></text>
 				<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">1</span>
