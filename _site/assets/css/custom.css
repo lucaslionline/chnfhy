@@ -6,9 +6,7 @@
  a {
  	color: inherit;
  }
-section {
-	background-color: white;
-}
+
 
 .swiper-slide img {
 	width: 100%;
@@ -24,6 +22,9 @@ section {
 .pull-right {
 	float: right;
 }
+.text-muted {
+	color: #999999;
+}
 
 
  .x-small {
@@ -38,9 +39,18 @@ section {
  .blue {
  	color: blue;
  }
+ .green {
+ 	color: green;
+ }
+ .success {
+ 	color: #09BB07;
+ }
  .bg-red {
  	background-color: red;
  }
+ .bg-white {
+	background-color: white;
+}
 
  .container {
  	margin-bottom: 50px;
@@ -67,8 +77,9 @@ section {
  }
 
 
- .weui-cell__hd .feather {
- 	height: 16px;
+ .weui-cell__hd text,
+ .weui-cell__bd text {
+ 	color: #999999;
  }
 
  .weui-item-box_thumb {
@@ -250,4 +261,23 @@ section {
 .coin-cover {
 	text-align: center;
 	color: white;
+}
+
+
+.nav-orders {
+	background-color: white;
+	height: 40px;
+ 	line-height: 40px;
+ 	background-color: white;
+ 	border-bottom: 1px solid #e5e5e5;
+ 	position: fixed;
+ 	top: 0;
+ 	width: 100%;
+}
+.tab-current {
+	color: red;
+	border-bottom: 2px solid red;
+}
+.weui-tab-orders text {
+	color: #999999;
 }

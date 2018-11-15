@@ -45,7 +45,7 @@
 
 
 <div class="weui-cells">
-	<a class="weui-cell weui-cell_access" href="javascript:;">
+	<a class="weui-cell weui-cell_access" href="/fenghuangyuan/pages/me/orders-done.html">
 		<div class="weui-cell__bd">
 			<p><text class="iconfont icon-text"></text>&nbsp;我的订单</p>
 		</div>
@@ -55,26 +55,40 @@
 
 
 
-<div class="weui-tab">
+<div class="weui-tab weui-tab-orders">
 	<div class="weui-navbar">
 		<div class="weui-navbar__item">
-			<span style="display: inline-block; position: relative;">
-				<text class="iconfont icon-pay" style="font-size: 1.5rem;"></text><br>
-				<span class="weui-badge" style="position: absolute;top: -2px; right: -4px;">2</span>
-				待支付
-			</span>
+			<a href="/fenghuangyuan/pages/me/orders-unpaid.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-pay" style="font-size: 1.5rem;"></text><br>
+					<span class="weui-badge" style="position: absolute;top: -2px; right: -4px;">2</span>
+					待支付
+				</span>
+			</a>
 		</div>
 		<div class="weui-navbar__item">
-			<text class="iconfont icon-present" style="font-size: 1.5rem;"></text><br>
-			待发货
+			<a href="/fenghuangyuan/pages/me/orders-undelivered.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-present" style="font-size: 1.5rem;"></text><br>
+					待发货
+				</span>
+			</a>
 		</div>
 		<div class="weui-navbar__item">
-			<text class="iconfont icon-deliver" style="font-size: 1.5rem;"></text><br>
-			待收货
+			<a href="/fenghuangyuan/pages/me/orders-unreceived.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-deliver" style="font-size: 1.5rem;"></text><br>
+					待收货
+				</span>
+			</a>
 		</div>
 		<div class="weui-navbar__item">
-			<text class="iconfont icon-round_transfer" style="font-size: 1.5rem;"></text><br>
-			退换货
+			<a href="/fenghuangyuan/pages/me/refund.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-round_transfer" style="font-size: 1.5rem;"></text><br>
+					退换货
+				</span>
+			</a>
 		</div>
 	</div>
 	<div class="weui-tab__panel">
