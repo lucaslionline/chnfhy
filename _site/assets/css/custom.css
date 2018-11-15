@@ -281,3 +281,12 @@
 .weui-tab-orders text {
 	color: #999999;
 }
+
+
+.order-complete {
+	position: absolute;
+	top: 0px;
+	right: 2.5em;
+	height: 50px;
+	opacity: 0.6;
+}

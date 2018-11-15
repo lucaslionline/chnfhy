@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
-	<title>已完成订单</title>
+	<title>订单详情</title>
 	
 	<!--
 	<link rel="stylesheet" type="text/css" href="/fenghuangyuan/assets/css/bootstrap-3.0.css">
@@ -29,49 +29,11 @@
 	<div class="container">
 
 
-	<nav class="weui-flex nav-orders">
-	<div class="weui-flex__item tab-current">
-		<a href="/fenghuangyuan/pages/me/orders-done.html">
-			<span style="display: inline-block; position: relative;">
-				已完成
-			</span>
-		</a>
-	</div>
-
-	<div class="weui-flex__item ">
-		<a href="/fenghuangyuan/pages/me/orders-unpaid.html">
-			<span style="display: inline-block; position: relative;">
-				待支付
-				<span class="weui-badge" style="position: absolute; top: 0.4em; right: -1em;">2</span>
-			</span>
-		</a>
-	</div>
-
-	<div class="weui-flex__item ">
-		<a href="/fenghuangyuan/pages/me/orders-undelivered.html">
-			<span style="display: inline-block; position: relative;">
-				待发货
-			</span>
-		</a>
-	</div>
-
-	<div class="weui-flex__item ">
-		<a href="/fenghuangyuan/pages/me/orders-unreceived.html">
-			<span style="display: inline-block; position: relative;">
-				待收货
-			</span>
-		</a>
-	</div>
-</nav>
-
-<div style="height: 40px;"></div>
-
-
-<div class="weui-panel weui-panel_access">
-	<div class="weui-panel__hd"><text class="iconfont icon-text"></text> 已完成订单</div>
+	<div class="weui-panel">
+	<div class="weui-panel__hd"><text class="iconfont icon-text"></text> 订单详情</div>
 
 	<div class="weui-panel__bd">
-		<a href="/fenghuangyuan/pages/me/orders/20181112-001.html" class="weui-media-box weui-media-box_appmsg">
+		<div class="weui-media-box weui-media-box_appmsg">
 			<img class="order-complete" src="/fenghuangyuan/assets/img/done.png">
 			<div class="weui-media-box__hd">
 				<img class="weui-media-box__thumb" src="/fenghuangyuan/assets/img/item1.jpg">
@@ -84,43 +46,41 @@
 					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
 				</p>
 			</div>
-		</a>
-
-		<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
-			<img class="order-complete" src="/fenghuangyuan/assets/img/done.png">
-			<div class="weui-media-box__hd">
-				<img class="weui-media-box__thumb" src="/fenghuangyuan/assets/img/item2.jpg">
-			</div>
-			<div class="weui-media-box__bd">
-				<p>铁皮枫斗（100克）</p>
-				<p class="weui-media-box__desc">¥898.00</p>
-				<p class="weui-media-box__info">
-					2018-10-02
-					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
-				</p>
-			</div>
-		</a>
-
-		<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
-			<img class="order-complete" src="/fenghuangyuan/assets/img/done.png">
-			<div class="weui-media-box__hd">
-				<img class="weui-media-box__thumb" src="/fenghuangyuan/assets/img/item3.jpg">
-			</div>
-			<div class="weui-media-box__bd">
-				<p>铁皮石斛软金粉（金装）</p>
-				<p class="weui-media-box__desc">¥398.00</p>
-				<p class="weui-media-box__info">
-					2018-08-05
-					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
-				</p>
-			</div>
-		</a>
+		</div>
 	</div>
 </div>
 
-
-<div class="weui-btn-area">
-	<a href="/fenghuangyuan/pages/items.html" class="weui-btn weui-btn_primary">继续逛商城</a>
+<div class="weui-form-preview" style="margin-top: -1px;">
+	<div class="weui-form-preview__hd">
+		<label class="weui-form-preview__label">付款金额</label>
+		<em class="weui-form-preview__value">¥458.00</em>
+	</div>
+	<div class="weui-form-preview__bd">
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">商品描述</label>
+			<span class="weui-form-preview__value">铁皮枫斗（50克）</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">订单编号</label>
+			<span class="weui-form-preview__value">20181112-001</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">下单时间</label>
+			<span class="weui-form-preview__value">2018-11-12 07:47:59</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">支付方式</label>
+			<span class="weui-form-preview__value">积分兑换/余额支付/微信支付</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">收货地址</label>
+			<span class="weui-form-preview__value">北京市xx区xx街xx楼xx室</span>
+		</div>
+	</div>
+	<div class="weui-form-preview__ft">
+		<a class="weui-form-preview__btn weui-form-preview__btn_default" href="javascript:">删除订单</a>
+		<button type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">再次购买</button>
+	</div>
 </div>
 
 

@@ -1,0 +1,60 @@
+---
+layout: default
+title: "订单详情"
+---
+
+
+
+<div class="weui-panel">
+	<div class="weui-panel__hd"><text class="iconfont icon-text"></text> 订单详情</div>
+
+	<div class="weui-panel__bd">
+		<div class="weui-media-box weui-media-box_appmsg">
+			<img class="order-complete" src="{{ site.baseurl }}/assets/img/done.png">
+			<div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="{{ site.baseurl }}/assets/img/item1.jpg">
+			</div>
+			<div class="weui-media-box__bd">
+				<p>铁皮枫斗（50克）</p>
+				<p class="weui-media-box__desc">¥458.00</p>
+				<p class="weui-media-box__info">
+					2018-11-12
+					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="weui-form-preview" style="margin-top: -1px;">
+	<div class="weui-form-preview__hd">
+		<label class="weui-form-preview__label">付款金额</label>
+		<em class="weui-form-preview__value">¥458.00</em>
+	</div>
+	<div class="weui-form-preview__bd">
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">商品描述</label>
+			<span class="weui-form-preview__value">铁皮枫斗（50克）</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">订单编号</label>
+			<span class="weui-form-preview__value">20181112-001</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">下单时间</label>
+			<span class="weui-form-preview__value">2018-11-12 07:47:59</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">支付方式</label>
+			<span class="weui-form-preview__value">积分兑换/余额支付/微信支付</span>
+		</div>
+		<div class="weui-form-preview__item">
+			<label class="weui-form-preview__label">收货地址</label>
+			<span class="weui-form-preview__value">北京市xx区xx街xx楼xx室</span>
+		</div>
+	</div>
+	<div class="weui-form-preview__ft">
+		<a class="weui-form-preview__btn weui-form-preview__btn_default" href="javascript:">删除订单</a>
+		<button type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">再次购买</button>
+	</div>
+</div>
