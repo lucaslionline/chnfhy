@@ -6,13 +6,41 @@ title: "待支付订单"
 
 {% include nav-orders.html %}
 
-<center class="gray">
-	<div class="icon-bg">
-		<text class="iconfont icon-text" style="font-size: 50px; color: #eee;"></text>
+
+<div class="weui-panel weui-panel_access">
+	<div class="weui-panel__hd"><text class="iconfont icon-text"></text> 待支付订单（2）</div>
+
+	<div class="weui-panel__bd">
+		<a href="#" class="weui-media-box weui-media-box_appmsg">
+			<div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="{{ site.baseurl }}/assets/img/item1.jpg">
+			</div>
+			<div class="weui-media-box__bd">
+				<p>铁皮枫斗（50克）</p>
+				<p class="weui-media-box__desc">¥458.00</p>
+				<p class="weui-media-box__info">
+					2018-11-12
+					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
+				</p>
+			</div>
+		</a>
+
+		<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			<div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="{{ site.baseurl }}/assets/img/item2.jpg">
+			</div>
+			<div class="weui-media-box__bd">
+				<p>铁皮枫斗（100克）</p>
+				<p class="weui-media-box__desc">¥898.00</p>
+				<p class="weui-media-box__info">
+					2018-10-02
+					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
+				</p>
+			</div>
+		</a>
 	</div>
-	<p>您暂时没有任何待支付订单</p>
-</center>
+</div>
 
 <div class="weui-btn-area">
-	<a href="{{ site.baseurl }}/pages/items.html" class="weui-btn weui-btn_primary">去商城逛逛</a>
+	<a href="{{ site.baseurl }}/pages/cart/cart-list.html" class="weui-btn weui-btn_primary">去购物车支付</a>
 </div>
