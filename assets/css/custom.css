@@ -304,14 +304,3 @@
 .tab-content > .active {
   display: block;
 }
-
-
-.or {
-	width: 40px;
-	height: 40px;
-	background-color: white;
-	border-radius: 50%;
-	line-height: 40px;
-	color: #999;
-	font-size: larger;
-}
