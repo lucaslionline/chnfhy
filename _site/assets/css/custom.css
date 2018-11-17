@@ -387,3 +387,10 @@ input[class=weui-check-success] {
 	font-size: smaller;
 	margin-right: .8em;
 }
+
+
+
+.checkout-preview .weui-form-preview__btn_primary_fill {
+	background-color: #09BB07;
+	color: white;
+}
