@@ -33,6 +33,9 @@
  .x-small {
  	font-size: x-small;
  }
+ .larger {
+ 	font-size: larger;
+ }
  .gray {
  	color: gray;
  }
@@ -153,8 +156,23 @@
  	height: 40px;
  	line-height: 40px;
  	background-color: white;
+ 	padding-left: 15px;
+ 	padding-right: 15px;
  }
 
+ .item-head {
+ 	background-color: white;
+ 	padding: .5em 15px;
+ 	border-top: 1px solid #eee;
+ 	border-bottom: 1px solid #eee;
+ }
+.item-head-price {
+	font-size: 18px;
+	color: red;
+}
+ .item-head-name {
+ 	font-size: 14px;
+ }
 
 
 
@@ -360,4 +378,10 @@ input[class=weui-check-success] {
 	border-radius: 8px;
 	display: inline-block;
 	text-align: center;
+}
+
+.cell-prefix {
+	color: #999999;
+	font-size: smaller;
+	margin-right: .8em;
 }
