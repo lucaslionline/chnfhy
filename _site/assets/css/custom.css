@@ -382,6 +382,11 @@ input[class=weui-check-success] {
 	text-align: center;
 }
 
+.cart-delete {
+	margin-right: .8em;
+}
+
+
 .cell-prefix {
 	color: #999999;
 	font-size: smaller;
