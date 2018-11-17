@@ -68,20 +68,25 @@ var mySwiper = new Swiper ('#cover', {
 
 
 <div class="weui-cells">
-	<a class="weui-cell weui-cell_access" href="javascript:;">
-		<div class="weui-cell__hd cell-prefix">已选</div>
-		<div class="weui-cell__bd">
-			<p>1件</p>
+	<div class="weui-cell">
+		<div class="weui-cell__hd cell-prefix">数量</div>
+		<div class="weui-cell__bd" style="text-align: right;">
+			<span class="cart-quantity-minus"><strong>-</strong></span>
+			<input type="text" class="cart-quantity" size="1" value="1">
+			<span class="cart-quantity-plus"><strong>+</strong></span>
 		</div>
-		<div class="weui-cell__ft"></div>
-	</a>
-	<a class="weui-cell weui-cell_access" href="javascript:;">
+	</div>
+
+	<div class="weui-cell weui-cell_select weui-cell_select-after">
 		<div class="weui-cell__hd cell-prefix">送至</div>
 		<div class="weui-cell__bd">
-			<p>北京市xx区xx街xx室</p>
+			<select class="weui-select" name="select2">
+				<option value="1">北京市xx区xx街xx楼xx室</option>
+				<option value="2">上海市xx区xx街xx楼xx室</option>
+				<option value="3">其它</option>
+			</select>
 		</div>
-		<div class="weui-cell__ft"></div>
-	</a>
+	</div>
 </div>
 
 
@@ -105,19 +110,62 @@ var mySwiper = new Swiper ('#cover', {
 
 
 
-<!--================= 购买 =================-->
-<div style="height: 50px;"></div>
-<div class="checkout-preview">
-	<div class="weui-form-preview__ft">
-		<span class="weui-form-preview__btn weui-form-preview__btn_default">
-			<text class="iconfont icon-cart"></text>
-			加入购物车
-		</span>
-		<button type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary_fill" href="javascript:">
-			立即购买
-		</button>
+<div>
+	<div class="weui-mask" id="iosMask" style="display: none"></div>
+	<div class="weui-actionsheet" id="iosActionsheet">
+		<div class="weui-actionsheet__title">
+			<p class="weui-actionsheet__title-text">这是一个标题，可以为一行或者两行。</p>
+		</div>
+		<div class="weui-actionsheet__menu">
+			<div class="weui-actionsheet__cell">示例菜单</div>
+			<div class="weui-actionsheet__cell">示例菜单</div>
+			<div class="weui-actionsheet__cell">示例菜单</div>
+			<div class="weui-actionsheet__cell">示例菜单</div>
+		</div>
+		<div class="weui-actionsheet__action">
+			<div class="weui-actionsheet__cell" id="iosActionsheetCancel">取消</div>
+		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+    // ios
+    $(function(){
+    	var $iosActionsheet = $('#iosActionsheet');
+    	var $iosMask = $('#iosMask');
+
+    	function hideActionSheet() {
+    		$iosActionsheet.removeClass('weui-actionsheet_toggle');
+    		$iosMask.fadeOut(200);
+    	}
+
+    	$iosMask.on('click', hideActionSheet);
+    	$('#iosActionsheetCancel').on('click', hideActionSheet);
+    	$("#showQuantitySelect").on("click", function(){
+    		$iosActionsheet.addClass('weui-actionsheet_toggle');
+    		$iosMask.fadeIn(200);
+    	});
+    });
+    </script>
+
+
+
+
+
+    <!--================= 购买 =================-->
+    <div style="height: 50px;"></div>
+    <div class="checkout-preview">
+    	<div class="weui-form-preview__ft">
+    		<span class="weui-form-preview__btn weui-form-preview__btn_default">
+    			<text class="iconfont icon-cart"></text>
+    			加入购物车
+    		</span>
+    		<button type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary_fill" href="javascript:">
+    			立即购买
+    		</button>
+    	</div>
+    </div>
 
 
 	<footer class="weui-footer_fixed-bottom">

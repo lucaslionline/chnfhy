@@ -361,10 +361,12 @@ input[class=weui-check-success] {
  .cart-quantity {
  	background-color: #eee;
  	padding: 2px .6em;
+ 	border: 0px solid #ccc;
  	border-radius: 4px;
  	color: #999;
  	margin: 0 2px;
  	display: inline-block;
+ 	text-align: center;
  }
 
 .cart-quantity-minus,
