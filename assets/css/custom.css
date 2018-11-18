@@ -23,7 +23,12 @@
 .text-muted {
 	color: #999999;
 }
-
+.text-overflow {
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 
  .x-small {
  	font-size: x-small;
@@ -419,3 +424,5 @@ input[class=weui-check-success] {
 	width: 100%;
 	z-index: 500;
 }
+
+
