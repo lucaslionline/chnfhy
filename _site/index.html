@@ -24,31 +24,21 @@
 
 <body>
 	<div class="container">
-		<div class="weui-flex header-back">
-	<div class="weui-flex__item" style="text-align: left;">
-		<a href="javascript:history.back();">
-			<text class="iconfont icon-back" style="margin-left: 15px;"></text>
-		</a>
-	</div>
-	<div class="weui-flex__item">凤凰源官方商城</div>
-	<div class="weui-flex__item"></div>
-</div>
-<div style="height: 40px;"></div>
 
 		<div class="swiper-container" id="cover">
-	<div class="swiper-wrapper">
-		<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide1.jpg"></div>
-		<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide2.jpg"></div>
-		<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide3.jpg"></div>
-		<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide4.jpg"></div>
-	</div>
-	<!-- 如果需要分页器 -->
-	<div class="swiper-pagination"></div>
-</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide1.jpg"></div>
+				<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide2.jpg"></div>
+				<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide3.jpg"></div>
+				<div class="swiper-slide"><img src="/fenghuangyuan/assets/img/slide4.jpg"></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
 
-<script type="text/javascript">
-var mySwiper = new Swiper ('#cover', {
-	direction: 'horizontal',
+		<script type="text/javascript">
+		var mySwiper = new Swiper ('#cover', {
+			direction: 'horizontal',
 	loop: true, // 循环模式选项
 	// 如果需要分页器
 	pagination: {
@@ -58,43 +48,43 @@ var mySwiper = new Swiper ('#cover', {
 		delay: 3000,
 	}
 });    
-</script>
+		</script>
 
 
 
 
 
-<div class="weui-search-bar" id="searchBar">
-	<form class="weui-search-bar__form">
-		<div class="weui-search-bar__box">
-			<i class="weui-icon-search"></i>
-			<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required/>
-			<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+		<div class="weui-search-bar" id="searchBar">
+			<form class="weui-search-bar__form">
+				<div class="weui-search-bar__box">
+					<i class="weui-icon-search"></i>
+					<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required/>
+					<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+				</div>
+				<label class="weui-search-bar__label" id="searchText">
+					<i class="weui-icon-search"></i>
+					<span>搜索</span>
+				</label>
+			</form>
+			<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
 		</div>
-		<label class="weui-search-bar__label" id="searchText">
-			<i class="weui-icon-search"></i>
-			<span>搜索</span>
-		</label>
-	</form>
-	<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
-</div>
 
 
 
 
-<div class="weui-flex market-feature">
-	<a class="weui-flex__item" href="/fenghuangyuan/pages/group.html">
-		<text class="iconfont icon-group" style="font-size: 2.5em; color: green;"></text>
-		<div class="placeholder">团购通道</div>
-	</a>
-	<a class="weui-flex__item" href="/fenghuangyuan/pages/coupon-new.html">
-		<text class="iconfont icon-redpacket" style="font-size: 2.5em; color: red;"></text>
-		<div class="placeholder">兑换礼券</div>
-	</a>
-	<a class="weui-flex__item" href="/fenghuangyuan/pages/me/coins.html">
-		<text class="iconfont icon-coin" style="font-size: 2.5em; color: blue;"></text>
-		<div class="placeholder">积分换购</div>
-	</a>
+		<div class="weui-flex market-feature">
+			<a class="weui-flex__item" href="/fenghuangyuan/pages/group.html">
+				<text class="iconfont icon-group" style="font-size: 2.5em; color: green;"></text>
+				<div class="placeholder">团购通道</div>
+			</a>
+			<a class="weui-flex__item" href="/fenghuangyuan/pages/coupon-new.html">
+				<text class="iconfont icon-redpacket" style="font-size: 2.5em; color: red;"></text>
+				<div class="placeholder">兑换礼券</div>
+			</a>
+			<a class="weui-flex__item" href="/fenghuangyuan/pages/me/coins.html">
+				<text class="iconfont icon-coin" style="font-size: 2.5em; color: blue;"></text>
+				<div class="placeholder">积分换购</div>
+			</a>
 	<!--a class="weui-flex__item" href="">
 		<text class="iconfont icon-present" style="font-size: 2.5em; color: purple;"></text>
 		<div class="placeholder">超值礼包</div>
@@ -174,8 +164,8 @@ var mySwiper = new Swiper ('#cover', {
 	</div>
 	<div class="swiper-button-prev"></div>
 	<div class="swiper-button-next"></div>
-	 <!-- 如果需要滚动条 -->
-    <!--div class="swiper-scrollbar"></div-->
+	<!-- 如果需要滚动条 -->
+	<!--div class="swiper-scrollbar"></div-->
 </div>
 
 
@@ -187,9 +177,9 @@ navigation: {
 	prevEl: '.swiper-button-prev',
 },
 // 如果需要滚动条
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+scrollbar: {
+	el: '.swiper-scrollbar',
+},
 });
 </script>
 
@@ -200,7 +190,9 @@ navigation: {
 </div>
 
 
-		<footer class="weui-footer_fixed-bottom">
+
+
+<footer class="weui-footer_fixed-bottom">
 	<div class="weui-tabbar">
 		<a href="/fenghuangyuan/index.html" class="weui-tabbar__item ">
 			<text class="iconfont icon-home"></text>
@@ -235,6 +227,6 @@ navigation: {
 	</div>
 </footer>
 
-	</div>
+</div>
 </body>
 </html>
