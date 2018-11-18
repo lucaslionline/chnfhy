@@ -4,7 +4,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
 	<title>凤凰源官方商城</title>
@@ -18,6 +18,25 @@
 
 	<script src="/fenghuangyuan/assets/js/jquery-3.3.1.js"></script>
 	<script src="/fenghuangyuan/assets/js/swiper.min.js"></script>
+
+	<!--防止手机Safari浏览点击输入框自动放大-->
+	<script type="text/javascript">
+	window.onload=function () {  
+		document.addEventListener('touchstart',function (event) {  
+			if(event.touches.length>1){  
+				event.preventDefault();  
+			}  
+		})  
+		var lastTouchEnd=0;  
+		document.addEventListener('touchend',function (event) {  
+			var now=(new Date()).getTime();  
+			if(now-lastTouchEnd<=300){  
+				event.preventDefault();  
+			}  
+			lastTouchEnd=now;  
+		},false)  
+	} 
+	</script>
 </head>
 
 </head>
