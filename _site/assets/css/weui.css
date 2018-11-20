@@ -1188,6 +1188,10 @@
  	margin:0 0 .8em;
  	color: #999999;
  }
+ .weui-article img {
+ 	max-width: 100%;
+ }
+ 
  .weui-tabbar{
  	display:-webkit-box;
  	display:-webkit-flex;
