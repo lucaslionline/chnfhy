@@ -30,45 +30,31 @@
 			<text class="iconfont icon-back" style="margin-left: 15px;"></text>
 		</a>
 	</div>
-	<div class="weui-flex__item text-overflow">订单详情</div>
+	<div class="weui-flex__item text-overflow">余额支付</div>
 	<div class="weui-flex__item"></div>
 </div>
 <div style="height: 40px;"></div>
 
-		<div class="weui-form-preview">
-	<div class="weui-form-preview__hd">
-		<img class="order-complete" src="/fenghuangyuan/assets/img/done.png">
-		<label class="weui-form-preview__label">付款金额</label>
-		<em class="weui-form-preview__value">¥1356.00</em>
-	</div>
-	<div class="weui-form-preview__bd">
-		<div class="weui-form-preview__item">
-			<label class="weui-form-preview__label">商品描述</label>
-			<span class="weui-form-preview__value">铁皮枫斗（50克）x1</span>
-			<span class="weui-form-preview__value">铁皮枫斗（100克）x1</span>
-		</div>
-		<div class="weui-form-preview__item">
-			<label class="weui-form-preview__label">订单编号</label>
-			<span class="weui-form-preview__value">20181112-001</span>
-		</div>
-		<div class="weui-form-preview__item">
-			<label class="weui-form-preview__label">下单时间</label>
-			<span class="weui-form-preview__value">2018-11-12 07:47:59</span>
-		</div>
-		<div class="weui-form-preview__item">
-			<label class="weui-form-preview__label">支付方式</label>
-			<span class="weui-form-preview__value">积分兑换</span>
-		</div>
-		<div class="weui-form-preview__item">
-			<label class="weui-form-preview__label">收货地址</label>
-			<span class="weui-form-preview__value">北京市xx区xx街xx楼xx室</span>
-		</div>
-	</div>
-	<div class="weui-form-preview__ft">
-		<a class="weui-form-preview__btn weui-form-preview__btn_default" href="javascript:">删除订单</a>
-		<a class="weui-form-preview__btn weui-form-preview__btn_primary" href="/fenghuangyuan/pages/cart/orders/20181112-001.html">再次购买</a>
+		<div style="background-color: white;">
+	<center>
+		<text class="iconfont icon-moneybag" style="font-size: 50px; color: #09BB07;"></text>
+		<p>当前余额</p>
+		<h2 class="success">¥1,080</h2>
+	</center>
+
+	<div style="text-align: center; padding: 1em 15px;">
+		本次购物将消费您 <span style="color: red; font-size: large;"><strong>¥398</strong></span> 余额
 	</div>
 </div>
+
+
+
+<div class="weui-btn-area">
+	<a href="/fenghuangyuan/pages/cart/success.html" class="weui-btn weui-btn_primary">确认支付</a>
+	<a href="#" class="weui-btn weui-btn_default">微信支付</a>
+</div>
+
+
 
 
 		<footer class="weui-footer_fixed-bottom">
@@ -88,17 +74,17 @@
 			<p class="weui-tabbar__label">扫码</p>
 		</a>
 
-		<a href="/fenghuangyuan/pages/cart/cart-list.html" class="weui-tabbar__item ">
+		<a href="/fenghuangyuan/pages/cart/cart-list.html" class="weui-tabbar__item weui-bar__item_on">
 			<span style="display: inline-block; position: relative;">
-				<text class="iconfont icon-cart "></text>
+				<text class="iconfont icon-cart success"></text>
 				<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">2</span>
 			</span>
 			<p class="weui-tabbar__label">购物车</p>
 		</a>
 
-		<a href="/fenghuangyuan/pages/me/index.html" class="weui-tabbar__item weui-bar__item_on">
+		<a href="/fenghuangyuan/pages/me/index.html" class="weui-tabbar__item ">
 			<span style="display: inline-block;position: relative;">
-				<text class="iconfont icon-my success"></text>
+				<text class="iconfont icon-my "></text>
 				<span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
 			</span>
 			<p class="weui-tabbar__label">我的</p>

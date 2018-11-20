@@ -506,7 +506,7 @@
  }
  .weui-cell_link{
  	color:#586C94;
- 	font-size:14px;
+ 	/*font-size:14px;*/
  }
  .weui-cell_link:first-child:before{
  	display:block;
