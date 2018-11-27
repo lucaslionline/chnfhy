@@ -171,13 +171,18 @@
  	border-bottom: 1px solid #eee;
  }
 .item-head-price {
-	font-size: 18px;
+	font-size: 20px;
 	color: red;
+	font-weight: bold;
 }
  .item-head-name {
  	font-size: 14px;
+ 	font-weight: bold;
  }
 
+.weui-media-box__desc {
+	margin-bottom: 1em;
+}
 
 
  .row {
@@ -237,6 +242,15 @@
  }
  .item-cart .feather {
  	height: 1em;
+ }
+ .item-desc {
+ 	padding: 0 0.5em 0.5em 0.5em;
+ 	color: gray;
+ 	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: smaller;
  }
 
  .item-list-hot {
