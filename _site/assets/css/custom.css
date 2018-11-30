@@ -444,3 +444,11 @@ input[class=weui-check-success] {
 }
 
 
+.announcement {
+	position: absolute;
+	width: 100%;
+	bottom: 4em;
+	color: white;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+}
