@@ -108,6 +108,9 @@
  .pavilion-feature a {
  	padding: 1em 0;
  }
+ .pavilion-feature img {
+ 	width: 30px;
+ }
 
 
  .weui-cell__hd text,
