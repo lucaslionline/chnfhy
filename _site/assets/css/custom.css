@@ -332,6 +332,7 @@
  }
  .item-cart {
  	float: right;
+ 	color: #28a745;
  }
  .item-cart .feather {
  	height: 1em;
