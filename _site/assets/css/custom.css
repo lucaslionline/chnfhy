@@ -180,7 +180,6 @@
  	line-height: 40px;
  	background-color: white;
  	border-bottom: 1px solid #eee;
- 	
  	width: 100%;
  	z-index: 400;
  }
@@ -472,6 +471,39 @@
  	z-index: 500;
  }
 
+
+
+.pavilion-nav {
+	width: 120px;
+	position: fixed;
+	left: 0;
+	top: 40px;
+}
+ .pavilion-nav li {
+ 	line-height: 40px;
+ 	border-bottom: 1px solid #e5e5e5;
+ 	padding: 0 1em;
+ }
+ .pavilion-current {
+ 	background-color: #28a745;
+ 	color: white;
+ }
+
+ .pavilion-items {
+ 	background-color: white;
+ }
+ .pavilion-item {
+ }
+ .pavilion-item-thum {
+ }
+ .pavilion-item-thum img {
+ 	max-width: 120px;
+ 	vertical-align: middle;
+ }
+ .pavilion-item-info {
+ 	display: table-cell;
+ 	vertical-align: middle;
+ }
 
  .announcement {
  	position: absolute;
