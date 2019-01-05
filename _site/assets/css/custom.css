@@ -551,7 +551,7 @@
 	max-width: 80%;
 }
 .pavilion-nav {
-	width: 105px;
+	width: 110px;
 }
  .pavilion-nav li {
  	line-height: 40px;
@@ -569,7 +569,7 @@
 
  .pavilion-items {
  	background-color: white;
- 	margin-left: 105px;
+ 	margin-left: 110px;
  }
  .pavilion-item {
  	display: -ms-flexbox;
