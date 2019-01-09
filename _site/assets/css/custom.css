@@ -597,3 +597,9 @@
  	text-align: center;
  	background-color: rgba(0,0,0,0.5);
  }
+
+
+ .item-all-sum {
+  float: left;
+  margin: 0 10px 0 15px;
+ }
