@@ -176,7 +176,6 @@
 			<!--div class="swiper-scrollbar"></div-->
 		</div>
 
-
 		<script type="text/javascript">
 		var swiper = new Swiper('#hot', {
 slidesPerView:2,  //默认页面显示多少个
@@ -196,7 +195,6 @@ scrollbar: {
 		<div class="section-title">
 			<center><a href="/chnfhy/pages/item-list.html">查 看 全 部</a></center>
 		</div>
-
 
 
 
@@ -231,5 +229,33 @@ scrollbar: {
 </footer>
 
 	</div>
+
+
+
+
+	<!-- 广告浮层 -->
+	<div id="fade" class="overlay-bg"></div>
+
+	<div id="ad-layer" class="overlay-content small">
+		<p>
+			<span class="ad-close" onclick="CloseDiv('ad-layer','fade')"><text class="iconfont icon-roundclose" style="font-size: 20px;"></text></span>
+		</p>
+
+		<img src="/chnfhy/assets/img/ad1.jpg">
+
+		<div class="weui-btn weui-btn_primary" onclick="CloseDiv('ad-layer','fade')">
+			<text class="iconfont icon-roundclose"></text> 稍后再说
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	function CloseDiv(show_div,bg_div)
+	{
+		document.getElementById(show_div).style.display='none';
+		document.getElementById(bg_div).style.display='none';
+	};
+	</script>
+</div>
+
 </body>
 </html>
