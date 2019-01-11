@@ -544,6 +544,19 @@
 	z-index: 500;
 }
 
+
+
+.pavilion-feature {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.pavilion-feature a {
+  border-left: 1px solid #e5e5e5;
+}
+.pavilion-feature a:first-child {
+  border-left: 0;
+}
+
 .pavilion-icon {
 	text-align: center;
 }
